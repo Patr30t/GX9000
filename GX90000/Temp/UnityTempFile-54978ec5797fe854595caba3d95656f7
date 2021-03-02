@@ -291,8 +291,11 @@
 /define:ENABLE_LEGACY_INPUT_MANAGER
 /define:CSHARP_7_OR_LATER
 /define:CSHARP_7_3_OR_NEWER
-Assets\GyroMove.cs
 Assets\scripts\CameraFollow.cs
+Assets\scripts\DeviceRotation.cs
+Assets\scripts\GyroMove.cs
+Assets\scripts\LevelChunkData.cs
+Assets\scripts\LevelLayoutGeneration.cs
 Assets\scripts\MainMenu.cs
 Assets\scripts\Movement.cs
 Assets\scripts\PauseMode.cs
