@@ -229,7 +229,7 @@ GameObject:
   - component: {fileID: 6797276383585623820}
   - component: {fileID: 6797276383585623823}
   m_Layer: 0
-  m_Name: example ground
+  m_Name: example ground2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -244,7 +244,7 @@ Transform:
   m_GameObject: {fileID: 6797276383585623822}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 6, y: 1, z: 17.8}
+  m_LocalScale: {x: 8, y: 1, z: 20}
   m_Children:
   - {fileID: 6797276382368575270}
   m_Father: {fileID: 0}
