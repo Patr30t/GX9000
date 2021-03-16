@@ -107,7 +107,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0537500163f9d934ab3029bfb8da8450, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delay: 5
+  delay: 2
 --- !u!1 &6797276383394814998
 GameObject:
   m_ObjectHideFlags: 0
@@ -214,7 +214,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0537500163f9d934ab3029bfb8da8450, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delay: 5
+  delay: 2
 --- !u!1 &6797276383585623822
 GameObject:
   m_ObjectHideFlags: 0
