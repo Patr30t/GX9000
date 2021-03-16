@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: NorthToSout
   m_EditorClassIdentifier: 
   chunkSize: {x: 10, y: 10}
-  levelChunks: []
+  levelChunks:
+  - {fileID: 1547706942212298707, guid: bcf2aa8cee8e7c34e9da64e61d35e245, type: 3}
   entryDirection: 0
-  exitDirection: 0
+  exitDirection: 2
