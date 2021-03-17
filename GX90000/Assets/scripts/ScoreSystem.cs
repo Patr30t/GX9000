@@ -12,7 +12,7 @@ public class ScoreSystem : MonoBehaviour
     void Start()
     {
      scoreAmount = 0f;
-     pointIncreasedPerSecond = 1f;
+     pointIncreasedPerSecond = 5f;
 
     }
 
@@ -20,6 +20,6 @@ public class ScoreSystem : MonoBehaviour
     void Update()
     {
      scoreText.text = (int) scoreAmount + "Score";
-     scoreAmount =+pointIncreasedPerSecond * Time.deltaTime;
+     scoreAmount += pointIncreasedPerSecond * Time.deltaTime;
     }
 }
