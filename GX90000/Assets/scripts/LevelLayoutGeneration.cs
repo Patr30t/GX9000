@@ -55,7 +55,7 @@ public class LevelLayoutGeneration : MonoBehaviour
             case  LevelChunkData.Direction.North:
             nextRequiredDirection = LevelChunkData.Direction.South;
             spawnPosition = spawnPosition + new Vector3(0, 0, previousChunk.chunkSize.y);
-            spawnRotation = spawnRotation + new Vector3(-90, 0, 0);
+            
 
             break;
             case  LevelChunkData.Direction.East:

@@ -4,17 +4,26 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
+    public float movementSpeed = 10f;
+    public Rigidbody rb;
 
-    private Rigidbody rigid;
+    
 
-   private void Start ()
+  
+
+   private void FixedUpdate ()
    {
-       rigid = GetComponent<Rigidbody>();
+      Vector3 forwardMove = transform.forward * movementSpeed * Time.fixedDeltaTime;
+      rb.MovePosition(rb.position + forwardMove);
    }
 
    private void Update() {
        {
-           rigid.AddForce(Input.acceleration);
+           float hMovement = Input.GetAxis("Horizontal") * movementSpeed / 2;
+           float vMovement = Input.GetAxis("Vertical") * movementSpeed ;
+
+           transform.Translate(new Vector3 (hMovement, 0, vMovement) * Time.deltaTime);
+           
        }
    }
 }
