@@ -5,13 +5,10 @@ using UnityEngine;
 public class GyroMove : MonoBehaviour
 {
     [SerializeField]
-    private float speed = 10f;
+    private float speed = 1f;
 
     [SerializeField]
-    private float upSpeed = 2f;
-
-    [SerializeField]
-    private float maxSpeed = 20f;
+    private float maxSpeed = 1f;
     private  Rigidbody rb;
 
     private void Start()
@@ -27,6 +24,8 @@ public class GyroMove : MonoBehaviour
             transform.rotation = deviceRotation;
             
             rb.velocity = Vector3.ClampMagnitude(rb.velocity, maxSpeed);
+            Vector3 forwardMove = transform.forward * speed * Time.fixedDeltaTime;
+            rb.MovePosition(rb.position + forwardMove);
         }
     }
 }

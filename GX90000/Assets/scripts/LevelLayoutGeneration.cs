@@ -11,6 +11,8 @@ public class LevelLayoutGeneration : MonoBehaviour
 
     public Vector3 spawnOrigin;
     private Vector3 spawnPosition;
+
+    private Vector3 spawnRotation;
     public int chunksToSpawn = 10;
 
     void OnEnable()
@@ -52,7 +54,8 @@ public class LevelLayoutGeneration : MonoBehaviour
         {
             case  LevelChunkData.Direction.North:
             nextRequiredDirection = LevelChunkData.Direction.South;
-            spawnPosition = spawnPosition + new Vector3(0f, 0, previousChunk.chunkSize.y);
+            spawnPosition = spawnPosition + new Vector3(0, 0, previousChunk.chunkSize.y);
+            spawnRotation = spawnRotation + new Vector3(-90, 0, 0);
 
             break;
             case  LevelChunkData.Direction.East:
