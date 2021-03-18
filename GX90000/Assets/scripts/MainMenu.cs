@@ -15,4 +15,9 @@ public class MainMenu : MonoBehaviour
     {
         Application.Quit();
     }
+
+    public void FeedBackForm()
+    {
+        Application.OpenURL ("https://forms.gle/2ttXBQ2C1Yw2tnHs7");
+    }
 }
