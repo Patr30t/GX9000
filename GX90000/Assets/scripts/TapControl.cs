@@ -5,6 +5,8 @@ using UnityEngine;
 public class TapControl : MonoBehaviour
 {
     //Variables
+
+    private Animator animator;
     public float moveSpeed = 200f;
     public GameObject player;
 
@@ -17,6 +19,8 @@ public class TapControl : MonoBehaviour
         ScreenWidth = Screen.width;
         characterBody = player.GetComponent<Rigidbody> ();
 
+        animator = GetComponent<Animator>();
+
     }
 
 
@@ -28,11 +32,13 @@ public class TapControl : MonoBehaviour
         while(i< Input.touchCount){
             if (Input.GetTouch (i).position.x > ScreenWidth / 2){
                 //MOVEMENT RIGHT
-                RunCharacter(1.0f);
+                animator.SetBool("IsAttacking", true);
+                RunCharacter(5.0f);
             }
             if (Input.GetTouch (i).position.x < ScreenWidth / 2) {
                 //Movement LEFT
-                RunCharacter (-1.0f);
+                animator.SetBool("IsAttacking", true);
+                RunCharacter (-5.0f);
             }
             ++i;
         }
