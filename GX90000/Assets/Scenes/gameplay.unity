@@ -2133,7 +2133,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d399e8f0261059242bf9846957d775a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 10
+  moveSpeed: 80
   player: {fileID: 717216358}
 --- !u!1001 &755559031
 PrefabInstance:
@@ -3968,8 +3968,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -196, y: -0}
-  m_SizeDelta: {x: 409.2, y: 692.4}
+  m_AnchoredPosition: {x: -191, y: -0}
+  m_SizeDelta: {x: 420.8, y: 916.41}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1080610263
 MonoBehaviour:
@@ -6740,8 +6740,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 207, y: -0}
-  m_SizeDelta: {x: 385.2, y: 692.4}
+  m_AnchoredPosition: {x: 207.6, y: -0}
+  m_SizeDelta: {x: 381.5, y: 916.41}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1879061508
 MonoBehaviour:
@@ -7748,6 +7748,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RootOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3564367788297360836, guid: fa0e1e62ff5f38f478f5277c581da02c,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3564367788297360836, guid: fa0e1e62ff5f38f478f5277c581da02c,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 3564367788297360836, guid: fa0e1e62ff5f38f478f5277c581da02c,
         type: 3}
