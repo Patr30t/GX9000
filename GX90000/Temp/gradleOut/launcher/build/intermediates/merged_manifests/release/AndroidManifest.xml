@@ -4,7 +4,7 @@
     package="com.DormantTalent.ExoDus"
     android:installLocation="preferExternal"
     android:versionCode="1"
-    android:versionName="1.0" >
+    android:versionName="1.1" >
 
     <uses-sdk
         android:minSdkVersion="19"
@@ -72,7 +72,7 @@
             android:value="portrait|landscape" />
         <meta-data
             android:name="unity.build-id"
-            android:value="8f3206a1-6247-4101-a2ba-e4587f61ca1f" />
+            android:value="0b2db50d-3c49-4e88-b163-c06a12904c5f" />
 
         <activity
             android:name="com.unity3d.services.ads.adunit.AdUnitActivity"
