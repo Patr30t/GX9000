@@ -4,48 +4,57 @@ using UnityEngine;
 
 public class TapControl : MonoBehaviour
 {
-    //Variables
+    Rigidbody rb;
 
-    private Animator animator;
-    public float moveSpeed = 200f;
-    public GameObject player;
+    bool moveLeft;
+    bool moveRight;
 
-    private Rigidbody characterBody;
-    private float ScreenWidth;
+    float horizontalMove;
+    float verticalMove;
 
-    // Start is called before the first frame update
+    public float speed = 300;
+
+    // fetch RigidBody
     void Start()
     {
-        ScreenWidth = Screen.width;
-        characterBody = player.GetComponent<Rigidbody> ();
-
-        animator = GetComponent<Animator>();
-
+        rb = GetComponent<Rigidbody>();
     }
 
-
-
-    // Update is called once per frame
-    void Update()
+    //leftbutton
+    public void ButtonDownLeft()
     {
-        int i = 0;
-        while(i< Input.touchCount){
-            if (Input.GetTouch (i).position.x > ScreenWidth / 2){
-                //MOVEMENT RIGHT
-                animator.SetBool("IsAttacking", true);
-                RunCharacter(5.0f);
-            }
-            if (Input.GetTouch (i).position.x < ScreenWidth / 2) {
-                //Movement LEFT
-                animator.SetBool("IsAttacking", true);
-                RunCharacter (-5.0f);
-            }
-            ++i;
+        moveLeft = false;
+    }
+
+    //rightbutton
+    public void ButtonDownRight()
+    {
+        moveRight = false;
+    }
+
+    private void Update() {
+        Move();
+    }
+
+    void Move()
+    {
+        if (moveLeft)
+        {
+            horizontalMove =-speed;
+        }
+
+        else if (moveRight)
+        {
+            horizontalMove = speed;
+        }
+        else
+        {
+            horizontalMove = 0;
         }
     }
-        private void RunCharacter(float horizontalInput){
-            //MOVE PLAYER
-            characterBody.AddForce(new Vector2(horizontalInput * moveSpeed * Time.deltaTime, 0));
-        }
-    
+
+    private void FixedUpdate() {
+        rb.velocity = new Vector3(horizontalMove * Time.deltaTime, rb.velocity.y, verticalMove * Time.deltaTime);
+    }
+
 }
