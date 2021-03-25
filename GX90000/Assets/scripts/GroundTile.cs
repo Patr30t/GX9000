@@ -16,7 +16,7 @@ FloorSpawner floorSpawner;
 private void OnTriggerExit (Collider other) {
     {
         floorSpawner.Spawn();
-      //  Destroy(gameObject, 2);
+        Destroy(gameObject, 2);
     }
 }
     // Update is called once per frame
