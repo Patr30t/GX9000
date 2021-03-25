@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class FloorSpawner : MonoBehaviour
 {
+    public GameObject bgFloors;
     public GameObject groundTile;
     Vector3  SpawnPoint;
     // Start is called before the first frame update
