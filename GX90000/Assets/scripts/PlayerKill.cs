@@ -9,7 +9,7 @@ public class PlayerKill : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        Invoke("OnCollisionEnter", 8f);
     }
 
    void OnCollisionEnter(Collision other) {
